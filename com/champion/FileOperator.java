@@ -1,4 +1,6 @@
-package com.champion.Set;
+package com.champion;
+
+import com.champion.Set.BSTSet;
 
 import java.io.BufferedInputStream;
 import java.io.File;
