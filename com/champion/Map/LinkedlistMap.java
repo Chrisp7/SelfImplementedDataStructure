@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Created by CP on 20/08/2018.
  */
 public class LinkedlistMap<K, V> implements Map<K, V> {
-    private class Node {
+    public class Node {
         public K key;
         public V value;
         public Node next;
