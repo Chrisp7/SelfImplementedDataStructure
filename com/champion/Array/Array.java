@@ -139,6 +139,15 @@ public class Array<T> {
         return str.toString();
     }
 
+    public void swap(int index1, int index2) {
+        if (index1 < 0 || index1 > size || index2 < 0 || index2 > size)
+            throw new IllegalArgumentException("Illegal index");
+        T temp = data[index1];
+        data[index1] = data[index2];
+        data[index2] = temp;
+
+    }
+
     public void resize(int newCapacity) {
         T[] newData = (T[]) new Object[newCapacity];
         for (int i = 0; i < size; i++) {
