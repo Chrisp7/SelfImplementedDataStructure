@@ -19,6 +19,15 @@ public class Array<T> {
         this(10);
     }
 
+    public Array(T[] arr) {
+        data = (T[]) new Object[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            data[i] = arr[i];
+        }
+        size=arr.length;
+
+    }
+
     public int getSize() {
         return size;
     }
@@ -122,6 +131,13 @@ public class Array<T> {
             }
         }
         return pos;
+    }
+
+    public void set(int index, T t) {
+        if (index < 0 || size <= index)
+            throw new IllegalArgumentException("Illegal index");
+        data[index] = t;
+
     }
 
     @Override
