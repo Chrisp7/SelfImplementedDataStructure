@@ -32,7 +32,7 @@ public class MaxHeap<E extends Comparable<E>> {
         return data.isEmpty();
     }
 
-    private int parent(int index) {
+     private int parent(int index) {
         //remember to judge if it is parent node
         if (index == 0)
             throw new IllegalArgumentException("index-0 doesn't have parent");
